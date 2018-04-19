@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+			initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Welcome to MyTutor</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/mtstyle.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+
+</head>
+<body class="container-fluid">
+    <nav class="navbar navbar-expland-lg navbar-mytutor ">
+        <a class="navbar-brand navbar-logo" href="#">MyTutor</a>
+        <div class="container">
+            <div class="row login_form">
+                <div class="col-sm-6 offset-sm-6">
+                    <form id="login_form" action="#" method="post">
+                        <input type="hidden" name="lsd" value="#" autocomplete="off">
+                        <table cellspacing="1" role="presentation">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <input type="email" class="inputtext" name="email" id="email"
+                                               tableindex="1" data-testid="royal-email" placeholder="Email Address">
+                                    </td>
+                                    <td>
+                                        <input type="password" class="inputtext" name="pass" id="pass"
+                                               tableindex="2" data-testid="royal_pass" placeholder="Password">
+                                    </td>
+                                    <td>
+                                        <button class="btn btn-primary btn-sm"><i class="fa fa-sign-in"></i> LogIn</button>
+                                    </td>
+                                    <!--
+                                    <td>
+                                        <label class="btn btn-primary" id="loginbutton" for="login_button">
+                                            <input value="LogIn" tabindex="4" data-testid="royal_login_button"
+                                                type="submit" id="login_button">
+                                        </label>
+                                    </td>
+                                    -->
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="custom-control custom-checkbox" id="remember">
+                                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                            <label class="custom-control-label" for="customCheck1">Remember me</label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div id="forget">
+                                            <a href="#">Forget password?</a>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid mytutor-section bg-mytutor-light">
+        <div class="row">
+            <div class="col-md-5">
+                <img src="images/welcome.png" class="img-fluid" alt="Responsive Image">
+            </div>
+            <div class="col-md-7 mytutor-reg">
+                <div>
+                    <h2>Create a new account</h2>
+                </div>
+                <div class="reg_box">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputlname">LastName</label>
+                                <input type="text" class="form-control" id="inputlname" placeholder="LastName">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputfname">FirstName</label>
+                                <input type="text" class="form-control" id="inputfname" placeholder="FirstName">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputemail">Email Address</label>
+                                <input type="email" class="form-control" id="inputemail" placeholder="yourname@uq.net.au">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputgender">Gender</label>
+                                <input type="text" class="form-control" id="inputgender" placeholder="Male / Famale"></input>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputprogram">Program</label>
+                                <input type="text" class="form-control" id="inputprogram" placeholder="eg. Bachelor of IT">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputcampus">Campus</label>
+                                <select class="form-control" id="inputcampus">
+                                    <option selected>Choose your campus</option>
+                                    <option> St. Lucia</option>
+                                    <option> Gatton</option>
+                                    <option> Herston</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputuname">User Name</label>
+                                <input type="text" class="form-control" id="inputuname" placeholder="User Name">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputpass">Password</label>
+                                <input type="password" class="form-control" id="inputpass" placeholder="Password">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-4">
+                                <label for="inputrole">Register As</label>
+                                <select id="inputrole" class="form-control">
+                                    <option selected>Register as a</option>
+                                    <option>Tutor</option>
+                                    <option>Student</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                    Agree our privacy
+                                </label>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-success">Register</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer mytutor-footer text-center">
+        <div class="container">
+            <p class="text-muted"><small>&copy; MyTutor.com</small></p>
+            <p class="text-muted"><small>Terms &amp; Conditions</small></p>
+            <p class="text-muted"><small>About Us</small></p>
+        </div>
+    </footer>
+</body>
+</html>
