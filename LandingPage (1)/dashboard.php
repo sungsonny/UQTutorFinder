@@ -199,7 +199,7 @@ $db->disconnect();
 		<div id="myModal" class="modal">
 			<span class="close" id="close1">&times;</span>
 			<img class="modal-content" id="img01">
-			<form action="upload_file.php" method="post" enctype="multipart/form-data">
+			<form class = "modal-content" action="upload_file.php" method="post" enctype="multipart/form-data">
 			    <input type="file" name="userfile" id="file" onchange="readFile(this)"><br>
 			    <input type="submit" name="submit" value="Save">
 			</form>

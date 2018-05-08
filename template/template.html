@@ -2,32 +2,47 @@
 <head>
     <title> template </title>
     <link href="style.css" type="text/css" , rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+
     <meta charset="utf-8">
 </head>
-<body class="container-fluid">
+<body id="bootstrap-override-body" class="container-fluid">
 <!--top header -->
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
-    <a class="navbar-brand" href="#">
-        <img src = "images/logo.png"></a>
-    <ul class="navbar-nav">
-        <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-        </li>
-    </ul>
+<nav id="bootstrap-override-navbar" class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">UQ Tutor Finder</a>
+        </div>
+
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    <span id="userImage"> <img src="images\img_avatar.png"></span>
+                    <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Account Name</a></li>
+                    <li><a href="#">View Profile</a></li>
+                    <li><a href="#">Account Settings</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
 </nav>
+
 
 <!-- Side Navigation -->
 <div class="navigation">
     <ul class="nav flex-column">
         <li class="nav-item">
-            <a class="nav-link active" href = "">Dashboard</a>
+            <a class="nav-link active" href="">Dashboard</a>
         </li>
         <li class="nav-item">
-            <a class = "nav-link"  href = "" > Tutors </a>
+            <a class="nav-link" href=""> Tutors </a>
             <ul class="submenu">
                 <li><a href="">Find Tutors</a></li>
                 <li><a href="">My Tutors</a></li>
@@ -46,11 +61,7 @@
 
 <div class="container-fluid mytutor-section bg-mytutor-light">
     "stuff"
-   <table>
-       <tr>
 
-       </tr>
-   </table>
 </div>
 
 <footer class="footer mytutor-footer text-center">

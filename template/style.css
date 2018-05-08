@@ -1,3 +1,8 @@
+body{
+
+}
+
+
 .footer p {
     display: inline;
     margin-left: 10px;
@@ -15,6 +20,7 @@
     background-color: #f5f5f5;
     padding-right: 15px;
     padding-left: 15px;
+    margin-left: 90px;
 }
 
 #forget > a {
@@ -35,7 +41,7 @@ div {
 }
 
 .navigation {
-    margin-top: 55px;
+    margin-top: 58px;
     height: 100%;
     width: 180px;
     position: fixed;
@@ -96,6 +102,7 @@ div {
     color: #504747;
     min-height: 650px;
     width: 100%;
+    padding-left: 190px;
 }
 
 .bg-dark {
@@ -104,8 +111,28 @@ div {
     border-radius: 0;
 }
 
+#bootstrap-override-navbar{
+    margin-bottom: 2px;
+}
+
 .navbar-brand{
     height: 30px;
-    width: 80px;
+    width:300px;
+}
+
+.navbar-logo{
+    height: 30px;
+}
+.navbar-nav{
+    float: right;
+}
+
+#userImage img {
+    width:25px;
+    border-radius: 70%;
+}
+
+.container-fluid.mytutor-section.bg-mytutor-light{
+    padding-left:200px;
 }
 

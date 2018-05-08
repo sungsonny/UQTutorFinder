@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <?php
+
 session_start();
 if(!isset($_SESSION['user']) || !isset($_SESSION['pin'])){
 	header("Location: index.php");
